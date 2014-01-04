@@ -5,7 +5,7 @@
  * Find the product abc.
  */
 
-package Euler009;
+package Euler;
 
 public class EP009 {
 

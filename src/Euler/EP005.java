@@ -29,10 +29,9 @@ public class EP005 {
 			if (occurrences[i] < counter)
 				occurrences[i] = counter;
 		}
-
 	}
 
-	public void solution() {
+	public String solution() {
 				
 		//list of number 2-20
 		for(long i = 2; i <= 20; i++) {
@@ -44,7 +43,7 @@ public class EP005 {
 			res *= (long) Math.pow((double)prime[i], (double)occurrences[i]);
 		}
 		
-		System.out.println(Long.toString(res));
+		return Long.toString(res);
 	}
 
 	/**
@@ -52,7 +51,8 @@ public class EP005 {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		new EP005().solution();
+		String result = new EP005().solution();
+		System.out.println(result);
 	}
 
 }

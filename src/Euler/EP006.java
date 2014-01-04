@@ -1,4 +1,4 @@
-/*
+/* Euler Problem 006
  * The sum of the squares of the first ten natural numbers is,
  * (1)2 + (2)2 + ... + (10)2 = 385
  * The square of the sum of the first ten natural numbers is,
@@ -9,7 +9,7 @@
  * and the square of the sum.
  */
 
-package Euler006;
+package Euler;
 
 public class EP006 {
 
@@ -38,10 +38,10 @@ public class EP006 {
 		return product;
 	}
 	
-	public void solution() {
+	public String solution() {
 		long number = 100;
 		
-		System.out.println(Long.toString(Math.abs( squareOfSum(number) - sumOfSquare(number) )));
+		return (Long.toString(Math.abs( squareOfSum(number) - sumOfSquare(number) )) );
 	}
 	
 	/**
@@ -49,7 +49,8 @@ public class EP006 {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		new EP006().solution();
+		String result = new EP006().solution();
+		System.out.println(result);
 	}
 
 }

@@ -3,7 +3,7 @@
  * What is the largest prime factor of the number 600851475143 ?
  */
 
-package Euler003;
+package Euler;
 
 public class EP003 {
 	
@@ -25,7 +25,7 @@ public class EP003 {
 		return true;
 	}
 	
-	public void solution() {
+	public String solution() {
 		long largestPrime = 0;
 		long prime = 3;
 		long number = 600851475143L;
@@ -46,7 +46,7 @@ public class EP003 {
 				break;
 		}
 		
-		System.out.println(Long.toString(largestPrime));
+		return Long.toString(largestPrime);
 	}
 
 	/**
@@ -54,7 +54,8 @@ public class EP003 {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		new EP003().solution();
+		String result = new EP003().solution();
+		System.out.println(result);
 	}
 
 }

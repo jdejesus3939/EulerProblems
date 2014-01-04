@@ -3,7 +3,7 @@
  * Find the sum of all the primes below two million.
  */
 
-package Euler010;
+package Euler;
 
 public class EP010 {
 

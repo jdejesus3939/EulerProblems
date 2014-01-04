@@ -6,11 +6,11 @@
  * find the sum of the even-valued terms.
  */
 
-package Euler002;
+package Euler;
 
 public class EP002 {
 	
-	public void solution() {
+	public String solution() {
 		int sum = 0;
 		int first = 1;
 		int second = 2;
@@ -29,7 +29,7 @@ public class EP002 {
 			second = third;
 		}
 		
-		System.out.println(Integer.toString(sum));
+		return Integer.toString(sum);
 	}
 
 	/**
@@ -37,7 +37,8 @@ public class EP002 {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		new EP002().solution();
+		String result = new EP002().solution();
+		System.out.println(result);
 	}
 
 }

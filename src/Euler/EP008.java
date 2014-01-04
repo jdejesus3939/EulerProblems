@@ -22,7 +22,7 @@
  * 71636269561882670428252483600823257530420752963450
  */
 
-package Euler008;
+package Euler;
 
 public class EP008 {
 

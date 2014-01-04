@@ -4,7 +4,7 @@
  * Find the largest palindrome made from the product of two 3-digit numbers.
  */
 
-package Euler004;
+package Euler;
 
 public class EP004 {
 
@@ -15,7 +15,7 @@ public class EP004 {
 			return false;
 	}
 
-	public void solution() {
+	public String solution() {
 		int largestPalindrome = 0;
 		int product = 0;
 		
@@ -28,7 +28,7 @@ public class EP004 {
 			}
 		}
 		
-		System.out.println(Integer.toString(largestPalindrome));
+		return Long.toString(largestPalindrome);
 	}
 
 	/**
@@ -36,7 +36,8 @@ public class EP004 {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		new EP004().solution();
+		String result = new EP004().solution();
+		System.out.println(result);
 	}
 
 }

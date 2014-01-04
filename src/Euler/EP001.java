@@ -4,11 +4,11 @@
  * Find the sum of all the multiples of 3 or 5 below 1000.
  */
 
-package Euler001;
+package Euler;
 
 public class EP001 {
 
-	public void solution() {
+	public String solution() {
 		int sum = 0;
 		
 		for (int i = 0; i < 1000; i++) {
@@ -17,7 +17,7 @@ public class EP001 {
 			}
 		}
 		
-		System.out.println(Integer.toString(sum));
+		return Integer.toString(sum);
 	}
 	
 	/**
@@ -25,7 +25,8 @@ public class EP001 {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		new EP001().solution();
+		String result = new EP001().solution();
+		System.out.println(result);
 	}
 
 }
