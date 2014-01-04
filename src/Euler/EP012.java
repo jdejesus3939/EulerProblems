@@ -32,7 +32,7 @@ public class EP012 {
 		return factor;
 	}
 
-	public void solution() {
+	public String solution() {
 		int triangleNumber = 1;
 		int a = 1;
 		
@@ -43,7 +43,7 @@ public class EP012 {
 			triangleNumber += a;
 		}
 		
-		System.out.println(Integer.toString(triangleNumber));
+		return Integer.toString(triangleNumber);
 	}
 	
 	/**
@@ -51,7 +51,8 @@ public class EP012 {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		new EP012().solution();
+		String result = new EP012().solution();
+		System.out.println(result);
 	}
 
 }

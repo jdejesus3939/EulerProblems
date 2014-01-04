@@ -47,7 +47,7 @@ public class EP008 {
 			+ "05886116467109405077541002256983155200055935729725"
 			+ "71636269561882670428252483600823257530420752963450";
 
-	public void solution() {
+	public String solution() {
 		int maxProduct = 0;
 		int product;
 		
@@ -62,7 +62,7 @@ public class EP008 {
 				maxProduct = product;
 		}
 		
-		System.out.println(Integer.toString(maxProduct));
+		return Integer.toString(maxProduct);
 	}
 
 	/**
@@ -70,7 +70,8 @@ public class EP008 {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		new EP008().solution();
+		String result = new EP008().solution();
+		System.out.println(result);
 	}
 
 }

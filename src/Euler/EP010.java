@@ -25,7 +25,7 @@ public class EP010 {
 		return true;
 	}
 	
-	public void solution() {
+	public String solution() {
 		long sum = 0;
 		for (long i = 2; i < 2000000; i++) {
 			if (isPrime(i)) {
@@ -33,7 +33,7 @@ public class EP010 {
 			}
 		}
 		
-		System.out.println(Long.toString(sum));
+		return Long.toString(sum);
 	}
 	
 	/**
@@ -41,7 +41,8 @@ public class EP010 {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		new EP010().solution();
+		String result = new EP010().solution();
+		System.out.println(result);
 	}
 
 }

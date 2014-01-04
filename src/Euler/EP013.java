@@ -211,14 +211,14 @@ public class EP013 {
 			"53503534226472524250874054075591789781264330331690"
 	};
 
-	public void solution() {
+	public String solution() {
 		BigInteger sumOf = BigInteger.ZERO;
 		
 		for (int i = 0; i < numbers.length; i++) {
 			sumOf = sumOf.add(new BigInteger(numbers[i]));
 		}
 		
-		System.out.println(sumOf.toString().substring(0, 10));
+		return (sumOf.toString().substring(0, 10));
 	}
 	
 	/**
@@ -226,7 +226,8 @@ public class EP013 {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		new EP013().solution();
+		String result = new EP013().solution();
+		System.out.println(result);
 	}
 
 }

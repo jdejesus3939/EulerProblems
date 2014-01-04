@@ -133,7 +133,7 @@ public class EP011 {
 			return -1;
 	}
 
-	public void solution() {
+	public String solution() {
 		long maxProduct = 0;
 		int adjCompare = 4;
 
@@ -150,7 +150,7 @@ public class EP011 {
 			}
 		}
 
-		System.out.println(maxProduct);
+		return Long.toString(maxProduct);
 	}
 
 	/**
@@ -158,7 +158,8 @@ public class EP011 {
 	 */
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		new EP011().solution();
+		String result = new EP011().solution();
+		System.out.println(result);
 	}
 
 }
